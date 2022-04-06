@@ -2,7 +2,14 @@ package Aulas.Aula1_Recursividade;
 
 public class Hello_Recursao {
     public static void main(String[] args) {
+        System.out.println("--Decremento--");
         decremento(4);
+
+        System.out.println("--Incremento--");
+        incremento(4);
+
+        System.out.println("--IncrementoD--");
+        incrementoDecremento(4);
         //System.out.println(fatorial(3));
     }
 
