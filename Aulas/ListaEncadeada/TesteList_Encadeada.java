@@ -1,4 +1,4 @@
-package Aulas.Aula1_Recursividade;
+package Aulas.ListaEncadeada;
 
 public class TesteList_Encadeada {
     public static void main(String[] args) {

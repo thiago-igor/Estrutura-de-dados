@@ -1,4 +1,4 @@
-package Aulas.Aula1_Recursividade;
+package Aulas.Recursividade;
 
 public class Recurssao_Aula {
     

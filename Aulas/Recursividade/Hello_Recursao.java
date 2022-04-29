@@ -1,4 +1,4 @@
-package Aulas.Aula1_Recursividade;
+package Aulas.Recursividade;
 
 public class Hello_Recursao {
     public static void main(String[] args) {
