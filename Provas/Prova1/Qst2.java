@@ -1,10 +1,11 @@
+// Contar quantos multiplos pares temos
 package Provas.Prova1;
 
 public class Qst2 {
 
    public static void main(String[] args) {
     
-    System.out.println(ContadorPar(5));
+    System.out.println(ContadorPar(10));
 
    }
 
