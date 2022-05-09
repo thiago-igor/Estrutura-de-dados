@@ -104,7 +104,7 @@ public class ListaSimples {
         No local = inicio;
         while(local!=null){
             str += local.info + " ";
-            local = local.proximo;
+            local = local.proximo; 
         }
         return str;
     }

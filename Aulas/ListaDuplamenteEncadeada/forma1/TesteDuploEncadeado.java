@@ -1,4 +1,4 @@
-package Aulas.ListaDuplamenteEncadeada;
+package Aulas.ListaDuplamenteEncadeada.forma1;
 
 public class TesteDuploEncadeado {
     public static void main(String[] args) {
