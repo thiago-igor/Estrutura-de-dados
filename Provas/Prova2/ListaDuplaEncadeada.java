@@ -59,7 +59,7 @@ public class ListaDuplaEncadeada {
         }
     }
 
-    public Boolean posicaoNome(String busca){ // obs: funçao nao funcioma
+    public Boolean posicaoNome(String busca){ // erro
         if(inicio == null){
             return false;
         }
