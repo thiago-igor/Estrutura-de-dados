@@ -7,10 +7,18 @@ public class TesteListaDupla {
         listaDupla.addFim("Joao");
         listaDupla.addFim("Maria");
         listaDupla.addFim("Antonio");
-        listaDupla.addMeio(0, "Thiago");
         listaDupla.addFim("Sabrina");
+
+        //TODO: add na frente
+        listaDupla.addInicio("Gustavo");
+
+        //TODO: add em uma posição específica um determinado no
+        listaDupla.addMeio(0, "Thiago");
+
+        //TODO: imprimir a lista com quebra de linha e o numero da posição
         System.out.println(listaDupla);
 
-        listaDupla.posicaoNome("Thiago"); // obs: funçao nao funcioma
+        //TODO: dizer qual posicao foi encontrado o nome?
+        System.out.println(listaDupla.posicaoNome("Antonio"));
     }
 }

@@ -59,18 +59,18 @@ public class ListaDuplaEncadeada {
         }
     }
 
-    public Boolean posicaoNome(String busca){ // erro
+    public String posicaoNome(String busca){ // erro
         if(inicio == null){
-            return false;
+            return "nao encontrado!";
         }
         No local = inicio;
-        for(int i=0 ; i <= tamanho; i++){
-            local = local.proximo;
-            if(local.equals(busca)){
-                return true;
+        for(int i=1 ; i <= tamanho; i++){
+            if(local.info.equals(busca)){
+                return "Encontrado! (Posicao: " + i + ")";
             }
+            local = local.proximo;
         }
-        return false;
+        return "nao encontrado!";
     } 
 
     @Override
