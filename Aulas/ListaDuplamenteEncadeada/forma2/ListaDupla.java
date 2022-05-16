@@ -27,7 +27,7 @@ public class ListaDupla {
     }
 
     public void inserirInicio(String info){
-        No no = new No();
+        No no = new No(info);
         no.info = info;
         no.anterior = null;
         no.proximo = inicio;
@@ -57,7 +57,7 @@ public class ListaDupla {
     } 
 
     public void inserirFim(String info){
-        No no = new No();
+        No no = new No(info);
         no.info = info;
         no.proximo = null;
         no.anterior = fim;
@@ -96,7 +96,7 @@ public class ListaDupla {
             for(int i = 0; i<indice-1;i++){
                 local = local.proximo;
             }
-            No no = new No();
+            No no = new No(info);
             no.info= info;
             no.anterior = local;
             no.proximo = local.proximo;

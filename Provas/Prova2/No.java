@@ -1,4 +1,4 @@
-package Aulas.ListaDuplamenteEncadeada.forma2;
+package Provas.Prova2;
 
 public class No {
     String info;
@@ -6,9 +6,7 @@ public class No {
     No proximo;
 
     public No(String info) {
-        super();
         this.info = info;
     }
-
-    
+ 
 }
