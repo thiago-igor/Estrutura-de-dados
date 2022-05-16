@@ -5,7 +5,7 @@ public class ListaDuplaEncadeada {
     No fim;
     int tamanho;
 
-    public void incerirInicio(String info){
+    public void addInicio(String info){
         No no = new No(info);
         no.info = info;
         no.anterior =null;
@@ -21,7 +21,7 @@ public class ListaDuplaEncadeada {
 
     }
 
-    public void add(String info){
+    public void addFim(String info){
         No no = new No(info);
         no.info = info;
         no.proximo = null;
@@ -34,16 +34,54 @@ public class ListaDuplaEncadeada {
             inicio = fim;
         }
         tamanho++;
-
     }
+
+    public void addMeio(int indice, String info){
+        if(indice<=0){
+            addInicio(info);
+        }
+        else if(indice >= tamanho){
+            addFim(info);
+        }
+        else{
+            No local = inicio;
+            for(int i=0; i< indice -1; i++){
+                local = local.proximo;
+            }
+            No no = new No(info);
+            no.info = info;
+            no.anterior = local;
+            no.proximo = local.proximo;
+            local.proximo = no;
+            no.proximo.anterior = no;
+            tamanho++;
+
+        }
+    }
+
+    public Boolean posicaoNome(String busca){ // obs: funçao nao funcioma
+        if(inicio == null){
+            return false;
+        }
+        No local = inicio;
+        for(int i=0 ; i <= tamanho; i++){
+            local = local.proximo;
+            if(local.equals(busca)){
+                return true;
+            }
+        }
+        return false;
+    } 
 
     @Override
     public String toString() {
-        String str = "(" + tamanho + ")";
+        String str = "(Tamanho total: " + tamanho + ")\n";
         No local = inicio;
+        int i=1;
         while(local != null){
-            str += local.info + " ";
+            str += "(" + i + ")" + local.info + "\n";
             local = local.proximo;
+            i++;
         }
         return str;
     }
