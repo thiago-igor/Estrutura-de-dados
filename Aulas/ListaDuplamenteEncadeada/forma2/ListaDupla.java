@@ -6,7 +6,24 @@ public class ListaDupla {
     int tamanho;
 
     public static void main(String[] args) {
-        
+        ListaDupla l = new ListaDupla();
+        System.out.println(l);
+
+        for(int i=0; i<6;i++){
+            l.inserirInicio("" + (char) (i + 97));
+            System.out.println(l);
+        }
+
+        l.inserirMeio(1, "z");
+        System.out.println(l);
+
+        System.out.println("Retirei: "+ l.retirarMeio(1));
+        System.out.println(l);
+
+        while(l.retirarInicio() != null){
+            System.out.println(l);
+        }
+
     }
 
     public void inserirInicio(String info){
