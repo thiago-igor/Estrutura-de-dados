@@ -12,12 +12,23 @@ public class ArvoreBinaria {
 
     //Metodo recursivo: 
     public void adicionaNo(No novoNo, No raiz ){
-        if(novoNo.valor > raiz.valor)
+        if(novoNo.valor > raiz.valor){
             if(raiz.right != null){
                 adicionaNo(novoNo, raiz.right);
             }else{
                 raiz.right = novoNo;
             }
+        }else{
+            if(raiz.left != null){
+                adicionaNo(novoNo, raiz.left);
+            }
+            else{
+                raiz.left = novoNo;
+            }
+        }
     }
+
+    //Imprimir em Ordem:(ERD)
+    
 
 }
