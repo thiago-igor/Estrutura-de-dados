@@ -1,3 +1,5 @@
+package Aulas.Arvore;
+
 public class ArvoreBinaria {
     
     No raiz;
@@ -29,6 +31,13 @@ public class ArvoreBinaria {
     }
 
     //Imprimir em Ordem:(ERD)
-    
+    public void imprimirEmOrdem(No raiz){
+        if(raiz == null){
+            return;
+        }
+        imprimirEmOrdem(raiz.left);
+        System.out.print(raiz.valor + "\t");
+        imprimirEmOrdem(raiz.right);
+    }
 
 }
