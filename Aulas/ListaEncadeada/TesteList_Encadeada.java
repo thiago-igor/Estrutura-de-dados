@@ -9,6 +9,7 @@ public class TesteList_Encadeada {
         Encadeado encadeado1 = new Encadeado("1 fila", encadeado2);
 
         varrerListaEncadeada(encadeado1);
+        
     }
 
     static void varrerListaEncadeada(Encadeado encadeado) {

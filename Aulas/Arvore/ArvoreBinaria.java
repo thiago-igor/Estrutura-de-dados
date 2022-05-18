@@ -4,11 +4,11 @@ public class ArvoreBinaria {
     
     No raiz;
 
-    public ArvoreBinaria(int valor) {
+    public  ArvoreBinaria(int valor) {
         raiz = new No(valor);
     }
 
-    public No getArvoreBinaria(){
+    public  No getArvoreBinaria(){
         return raiz;
     }
 
