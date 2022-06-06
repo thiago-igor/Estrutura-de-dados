@@ -1,12 +1,13 @@
 package Aulas.Arvore;
- class No {
+ class Node {
     int valor;
-    No left;
-    No right;
-    public No(int valor) {
+    Node left;
+    Node right;
+    
+    public Node(int valor) {
         this.valor = valor;
-    }
-    public No(int valor, No left, No right) {
+    }  
+    public Node(int valor, Node left, Node right) {
         this.valor = valor;
         this.left = left;
         this.right = right;

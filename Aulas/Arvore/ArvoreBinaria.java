@@ -2,42 +2,42 @@ package Aulas.Arvore;
 
 public class ArvoreBinaria {
     
-    No raiz;
+    Node root;
 
     public  ArvoreBinaria(int valor) {
-        raiz = new No(valor);
+        root = new Node(valor);
     }
 
-    public  No getArvoreBinaria(){
-        return raiz;
+    public  Node getArvoreBinaria(){
+        return root;
     }
 
     //Metodo recursivo: 
-    public void adicionaNo(No novoNo, No raiz ){
-        if(novoNo.valor > raiz.valor){
-            if(raiz.right != null){
-                adicionaNo(novoNo, raiz.right);
+    public void adicionaNo(Node novoNo, Node root ){
+        if(novoNo.valor > root.valor){
+            if(root.right != null){
+                adicionaNo(novoNo, root.right);
             }else{
-                raiz.right = novoNo;
+                root.right = novoNo;
             }
         }else{
-            if(raiz.left != null){
-                adicionaNo(novoNo, raiz.left);
+            if(root.left != null){
+                adicionaNo(novoNo, root.left);
             }
             else{
-                raiz.left = novoNo;
+                root.left = novoNo;
             }
         }
     }
 
     //Imprimir em Ordem:(ERD)
-    public void imprimirEmOrdem(No raiz){
-        if(raiz == null){
+    public void imprimirEmOrdem(Node root){
+        if(root == null){
             return;
         }
-        imprimirEmOrdem(raiz.left);
-        System.out.print(raiz.valor + "\t");
-        imprimirEmOrdem(raiz.right);
+        imprimirEmOrdem(root.left);
+        System.out.print(root.valor + "\t");
+        imprimirEmOrdem(root.right);
     }
 
 }
