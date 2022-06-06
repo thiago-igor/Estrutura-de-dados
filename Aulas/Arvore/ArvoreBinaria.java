@@ -30,7 +30,7 @@ public class ArvoreBinaria {
         }
     }
 
-    //Imprimir em Ordem:(ERD)
+    //Imprimir em Ordem:(ERD).
     public void imprimirEmOrdem(Node root){
         if(root == null){
             return;
