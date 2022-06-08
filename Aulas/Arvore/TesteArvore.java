@@ -11,6 +11,6 @@ public class TesteArvore {
         ab.adicionaNo(new Node(65), ab.getArvoreBinaria());
 
         ab.imprimirEmOrdem(ab.getArvoreBinaria());
-        
+         
     }
 }
