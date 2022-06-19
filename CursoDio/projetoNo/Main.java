@@ -3,12 +3,12 @@ package CursoDio.projetoNo;
 public class Main {
     public static void main(String[] args) {
         
-        No no1 = new No("conteudo no1");
+        No<String> no1 = new No<>("conteudo no1");
 
-        No no2 = new No("conteudo no2");
+        No<String> no2 = new No<>("conteudo no2");
         no1.setProximoNo(no2);
 
-        No no3 = new No("conteudo no3");
+        No<String> no3 = new No<>("conteudo no3");
         no2.setProximoNo(no3);
 
         //No1->No2->No3-> null
