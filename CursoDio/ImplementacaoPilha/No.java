@@ -2,7 +2,7 @@ package CursoDio.ImplementacaoPilha;
 
 public class No {
     private int dado;
-    private No reNo = null;
+    private No refNo = null;
     
     public No() {
     }
@@ -20,12 +20,12 @@ public class No {
         this.dado = dado;
     }
 
-    public No getReNo() {
-        return reNo;
+    public No getRefNo() {
+        return refNo;
     }
 
-    public void setReNo(No reNo) {
-        this.reNo = reNo;
+    public void setRefNo(No refNo) {
+        this.refNo = refNo;
     }
 
     @Override
